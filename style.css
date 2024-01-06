@@ -17,19 +17,16 @@ body{
 }
 #calc{
     height: 25rem;
-    width: 15rem;
-    background-color: #222;
+    width: 16rem;
+    background:linear-gradient(#444,#333);
     padding: 15px;
     border-radius: 5px;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .display{
     height: 4.5rem;
     background: #000;
     padding: 5px;
-    border: 1px solid #777;
     border-radius: 5px;
 }
 .display input{
@@ -59,25 +56,34 @@ body{
     height: 3rem;
     width: 3rem;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    background: #000;
+    border-radius: 50%;
+    background: #222;
     color: whitesmoke;
     border: none;
-    border-radius: 50%;
-    box-shadow: -1px -1px 7px #8f8f8f, 1px 1px 5px #111;
+    box-shadow: 2px 2px 7px #8f8f8f inset, 2px 2px 7px #000;
     transition: all ease 0.3s;
+    cursor: pointer;
 }
 .rows .op{
-    color: yellowgreen;
+    color: #c9981d;
     background: #333;
 }
 
  .rows .equal{
-    background: yellowgreen;
+    background: #c9981d;
+    box-shadow: 2px 2px 7px yellow inset, 2px 2px 7px #000;
     color: #000;
     font-size: 27px;
 }
-input:active{
+
+.rows .op:hover{
+    background: #000; 
+}
+#num:hover{
+    scale: 1.1;
+}
+#num:active{
     scale: 0.95;
 }
